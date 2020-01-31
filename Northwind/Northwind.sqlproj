@@ -34,6 +34,8 @@
     <MigrationOrdering>FilePath</MigrationOrdering>
     <EvaluateExecutionOrderOnImport>True</EvaluateExecutionOrderOnImport>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DeployChangesExecutionOrder>b6937db8-385b-5bc6-aed9-c3e765bcd7fe|Programmable Objects\dbo\Views\Order Subtotals.sql;c7329051-2e71-56ed-89f4-66c73ebf4650|Programmable Objects\dbo\Stored Procedures\Employee Sales by Country.sql;4f4d471e-3f76-57b5-bccf-ace16c757c67|Programmable Objects\dbo\Stored Procedures\Sales by Year.sql;7ab3db79-f8eb-5fb0-ad50-81ed1453752c|Programmable Objects\dbo\Views\Product Sales for 1997.sql;938a27be-52eb-5c73-9d67-b19e399fccbb|Programmable Objects\dbo\Views\Category Sales for 1997.sql;cdf457c4-7237-516b-8f11-c1423d2429b5|Programmable Objects\dbo\Views\Order Details Extended.sql;29dfb32e-0243-52ab-b8d8-7d91b9fe12ca|Programmable Objects\dbo\Views\Sales by Category.sql;97c39fef-bd98-5d9f-80b5-c0c8c52e6492|Programmable Objects\dbo\Views\Sales Totals by Amount.sql;18832598-37b5-5d2f-873f-211be51de4dd|Programmable Objects\dbo\Views\Summary of Sales by Quarter.sql;de7779f1-7e93-59e7-b778-a5c6e31db990|Programmable Objects\dbo\Views\Summary of Sales by Year.sql</DeployChangesExecutionOrder>
+    <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -164,11 +166,57 @@
     <Folder Include="Pre-Deployment\" />
     <Folder Include="Post-Deployment\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Programmable Objects\" />
+    <Folder Include="Programmable Objects\dbo\" />
+    <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
+    <Folder Include="Programmable Objects\dbo\Views\" />
+    <Folder Include="Schema-Model\" />
+    <Folder Include="Schema-Model\dbo\" />
+    <Folder Include="Schema-Model\dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\001_20200131-1700_philip.price.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\CustOrderHist.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\CustOrdersDetail.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\CustOrdersOrders.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Employee Sales by Country.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Sales by Year.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\SalesByCategory.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\Ten Most Expensive Products.sql" />
+    <None Include="Programmable Objects\dbo\Views\Alphabetical list of products.sql" />
+    <None Include="Programmable Objects\dbo\Views\Category Sales for 1997.sql" />
+    <None Include="Programmable Objects\dbo\Views\Current Product List.sql" />
+    <None Include="Programmable Objects\dbo\Views\Customer and Suppliers by City.sql" />
+    <None Include="Programmable Objects\dbo\Views\Invoices.sql" />
+    <None Include="Programmable Objects\dbo\Views\Order Details Extended.sql" />
+    <None Include="Programmable Objects\dbo\Views\Order Subtotals.sql" />
+    <None Include="Programmable Objects\dbo\Views\Orders Qry.sql" />
+    <None Include="Programmable Objects\dbo\Views\Product Sales for 1997.sql" />
+    <None Include="Programmable Objects\dbo\Views\Products Above Average Price.sql" />
+    <None Include="Programmable Objects\dbo\Views\Products by Category.sql" />
+    <None Include="Programmable Objects\dbo\Views\Quarterly Orders.sql" />
+    <None Include="Programmable Objects\dbo\Views\Sales by Category.sql" />
+    <None Include="Programmable Objects\dbo\Views\Sales Totals by Amount.sql" />
+    <None Include="Programmable Objects\dbo\Views\Summary of Sales by Quarter.sql" />
+    <None Include="Programmable Objects\dbo\Views\Summary of Sales by Year.sql" />
+    <None Include="Schema-Model\dbo\Tables\Categories.sql" />
+    <None Include="Schema-Model\dbo\Tables\CustomerCustomerDemo.sql" />
+    <None Include="Schema-Model\dbo\Tables\CustomerDemographics.sql" />
+    <None Include="Schema-Model\dbo\Tables\Customers.sql" />
+    <None Include="Schema-Model\dbo\Tables\Employees.sql" />
+    <None Include="Schema-Model\dbo\Tables\EmployeeTerritories.sql" />
+    <None Include="Schema-Model\dbo\Tables\Order Details.sql" />
+    <None Include="Schema-Model\dbo\Tables\Orders.sql" />
+    <None Include="Schema-Model\dbo\Tables\Products.sql" />
+    <None Include="Schema-Model\dbo\Tables\Region.sql" />
+    <None Include="Schema-Model\dbo\Tables\Shippers.sql" />
+    <None Include="Schema-Model\dbo\Tables\Suppliers.sql" />
+    <None Include="Schema-Model\dbo\Tables\Territories.sql" />
   </ItemGroup>
 </Project>

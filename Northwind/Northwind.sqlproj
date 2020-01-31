@@ -219,4 +219,8 @@
     <None Include="Schema-Model\dbo\Tables\Suppliers.sql" />
     <None Include="Schema-Model\dbo\Tables\Territories.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\002_20200131-1708_philip.price.sql" />
+    <None Include="Schema-Model\dbo\Tables\StatusLookup.sql" />
+  </ItemGroup>
 </Project>

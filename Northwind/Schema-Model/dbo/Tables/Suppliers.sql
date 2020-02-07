@@ -11,7 +11,8 @@ CREATE TABLE [dbo].[Suppliers]
 [Country] [nvarchar] (15) NULL,
 [Phone] [nvarchar] (24) NULL,
 [Fax] [nvarchar] (24) NULL,
-[HomePage] [ntext] NULL
+[HomePage] [ntext] NULL,
+[Facebook] [nchar] (10) NULL
 )
 GO
 ALTER TABLE [dbo].[Suppliers] ADD CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED  ([SupplierID])

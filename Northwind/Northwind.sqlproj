@@ -36,6 +36,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DeployChangesExecutionOrder>b6937db8-385b-5bc6-aed9-c3e765bcd7fe|Programmable Objects\dbo\Views\Order Subtotals.sql;c7329051-2e71-56ed-89f4-66c73ebf4650|Programmable Objects\dbo\Stored Procedures\Employee Sales by Country.sql;4f4d471e-3f76-57b5-bccf-ace16c757c67|Programmable Objects\dbo\Stored Procedures\Sales by Year.sql;7ab3db79-f8eb-5fb0-ad50-81ed1453752c|Programmable Objects\dbo\Views\Product Sales for 1997.sql;938a27be-52eb-5c73-9d67-b19e399fccbb|Programmable Objects\dbo\Views\Category Sales for 1997.sql;cdf457c4-7237-516b-8f11-c1423d2429b5|Programmable Objects\dbo\Views\Order Details Extended.sql;29dfb32e-0243-52ab-b8d8-7d91b9fe12ca|Programmable Objects\dbo\Views\Sales by Category.sql;97c39fef-bd98-5d9f-80b5-c0c8c52e6492|Programmable Objects\dbo\Views\Sales Totals by Amount.sql;18832598-37b5-5d2f-873f-211be51de4dd|Programmable Objects\dbo\Views\Summary of Sales by Quarter.sql;de7779f1-7e93-59e7-b778-a5c6e31db990|Programmable Objects\dbo\Views\Summary of Sales by Year.sql</DeployChangesExecutionOrder>
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
+    <IncludeObjectsInDataSync>Table=[dbo].[Region]</IncludeObjectsInDataSync>
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -175,6 +176,7 @@
     <Folder Include="Schema-Model\dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Migrations\003_20200206-1523_philip.price.sql" />
     <None Include="Pre-Deployment\01_Create_Database.sql" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +188,7 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\CustOrdersDetail.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\CustOrdersOrders.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Employee Sales by Country.sql" />
+    <None Include="Programmable Objects\dbo\Stored Procedures\newproc.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Sales by Year.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\SalesByCategory.sql" />
     <None Include="Programmable Objects\dbo\Stored Procedures\Ten Most Expensive Products.sql" />
@@ -222,5 +225,8 @@
   <ItemGroup>
     <None Include="Migrations\002_20200131-1708_philip.price.sql" />
     <None Include="Schema-Model\dbo\Tables\StatusLookup.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\004_20200207-1120_philip.price.sql" />
   </ItemGroup>
 </Project>
